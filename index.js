@@ -1,19 +1,20 @@
-const express = require('express')
-const app = express();
-const port = 3000
-
-app.get('/', (req, res) => res.send('ver: 1.2 | CorruptedBytes'))
-
-app.listen(port, () =>
-console.log(`Your app is listening to http://localhost:${port}`)
-);
-
 const { Client } = require('discord.js');
 const client = new Client({ disableEveryone: true});
 const { promisify } = require('util');
 const readdir = promisify(require("fs").readdir);
 const klaw = require('klaw');
 const path = require('path');
+require('dotenv').config();
+const daddy = require('express')
+const web = daddy();
+const port = 3000
+
+web.get('/', (req, res) => res.send('ver: 1.2 | CorruptedBytes | AGP'))
+
+web.listen(port, () =>
+console.log(`Your app is listening to http://localhost:${port}`)
+);
+client.login(process.env.TOKEN);
 
 const init = async () => {
     const evtFiles = await readdir("./events/");
@@ -28,5 +29,3 @@ const init = async () => {
 };
 
 init();
-
-client.login('YOUR TOKEN');

@@ -1,15 +1,8 @@
 {
-  "name": "antighostbot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "CorruptedBytes",
-  "license": "MIT",
   "dependencies": {
-    "discord.js": "^11.3.2",
+    "discord.js": "^11.6.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.18.1",
     "klaw": "^2.1.1",
     "path": "^0.12.7"
   }

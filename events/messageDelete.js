@@ -1,5 +1,4 @@
-const { RichEmbed, Util, Client} = require('discord.js');
-const client = new Client();
+const { RichEmbed, Util } = require('discord.js');
 
 class MessageDelete {
     constructor(client) {
@@ -12,10 +11,9 @@ class MessageDelete {
         const regex = /<@!?(1|\d{17,19})>/;
         if (message.content.match(regex)) {
             const embed = new RichEmbed()
-                .setColor('ed4337')
-                .setTitle('Ghost Ping')
+                .setColor('RED')
                 .setAuthor(message.author.username, message.author.displayAvatarURL)
-                .setDescription(`Well, **${message.author.username}** decided to ghost-ping a user..`)
+                .setDescription(`Well well well, **${message.author.username}** decided to ghost-ping a user..`)
                 .addField('Their Message', `\`\`\`${Util.escapeMarkdown(message.content)}\`\`\``);
             return message.channel.send(message.author, embed);
         };
