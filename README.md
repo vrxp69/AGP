@@ -6,7 +6,7 @@ When downloaded run
 > npm i
 in command prompt
 
-If done go into the index.js and replace "YOUR TOKEN" with your discord.js [Bot](https://discord.com/developers/applications "Bot") Token
+If done go into the .env file and replace "TOKEN" with your discord.js [Bot](https://discord.com/developers/applications "Bot") Token
 
 Then run 
 > node .
