@@ -14,4 +14,5 @@ Then run
 
 Invite the official bot (recommended)
 
+[DISCORD](https://discord.gg/5mJBZKmqFk)
 [INVITE](https://discord.com/api/oauth2/authorize?client_id=1009575595111358575&permissions=274877991040&scope=bot "INVITE")
